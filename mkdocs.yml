@@ -1,0 +1,98 @@
+# Project Information
+site_name: docs9
+site_description: 酒井 Docs
+site_author: net9
+site_url: https://docs.net9.org
+strict: false
+
+# Repository
+repo_name: 'net9/docs9'
+repo_url: 'https://github.com/net9/docs9'
+edit_uri: 'blob/master/docs/'
+
+# Copyright
+copyright: 'Copyright &copy; 2021 THU.DCST.SAST.NET'
+
+# Theme
+theme:
+  name: 'material'
+  language: 'zh'
+  palette:
+    primary: white
+    accent: red
+    scheme: preference
+  icon:
+    repo: fontawesome/brands/github
+  favicon: 'static/img/favicon.png'
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+  font:
+    text: Source Sans Pro
+    code: Source Code Pro
+
+plugins:
+  - search:
+      lang: ja
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+  - git-authors:
+      show_contribution: true
+      show_line_count: true
+
+# Contents
+nav:
+  - 简介:
+    - Getting Started: index.md
+    - 格式手册: intro/format.md
+
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - md_in_html
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  search:
+    language: 'jp'
+
+extra_javascript:
+    - 'https://cdnjs.loli.net/ajax/libs/pangu/3.3.0/pangu.min.js'
+    - 'static/js/extra.js'
+    - 'https://cdn.bootcss.com/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'
+
+extra_css:
+  - 'static/css/extra.css'
