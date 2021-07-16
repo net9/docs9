@@ -16,7 +16,7 @@
 
 - 请务必确保文档中引用的 **外链** 图片已经全部转存到了 **本库内** 对应的 `images` 文件夹中（防止触发某些网站的防盗链），建议处理成 `MD 文档名称 + 编号` 的形式（可参考已有文档中图片的处理方式）。例如：本篇文档的文件名称为 format，则文档中引用的第一张图片的名字为 `format1.png`。
 
-- 推荐使用 SVG 格式的图片[^ref4]，以获取较好的清晰度和缩放效果。
+- 推荐使用 SVG 格式的图片[^ref3]，以获取较好的清晰度和缩放效果。
 
 - 同时具有源文件和导出图像的图片（例如 JPG 文件与 PSD 文件或者 SVG 图像与 TikZ TeX 源代码），建议将源文件以与图片相同的文件名保存于同一目录下。
 
@@ -214,7 +214,7 @@
 
     例：
 
-    > 前置知识：[时间复杂度](../basic/complexity.md)
+    > 前置知识：[简介](../index.md)
     >
     > 本页面将介绍基础的计算理论的知识。
 
@@ -243,7 +243,7 @@
     - 数列的第一项。
     - 输入文件的第一行。
 
-- 请尽量避免在标题中使用 MathJax 公式，无论是几级标题。在标题中使用公式有可能会导致目录显示错误。[^ref3]
+- 请尽量避免在标题中使用 MathJax 公式，无论是几级标题。在标题中使用公式有可能会导致目录显示错误。
 
 -   请注意代码的可读性。
     - 代码应拥有清晰的逻辑。
@@ -402,8 +402,6 @@ $$
 
 [^ref2]: [CCF 关于恢复 NOIP 竞赛的公告 - 中国计算机学会](https://www.ccf.org.cn/c/2020-01-21/694716.shtml)
 
-[^ref3]: [我的公式为什么在目录里没有正常显示？好像双倍了](faq.md)
-
-[^ref4]: [SVG|MDN](https://developer.mozilla.org/zh-CN/docs/Web/SVG)
+[^ref3]: [SVG|MDN](https://developer.mozilla.org/zh-CN/docs/Web/SVG)
 
 [^webarchive]: [Save Page in Internet Archive](https://web.archive.org/save/)

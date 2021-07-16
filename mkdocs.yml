@@ -25,13 +25,13 @@ theme:
     repo: fontawesome/brands/github
   favicon: 'static/img/favicon.png'
   features:
-    - navigation.instant
     - navigation.tabs
     - search.suggest
     - search.highlight
   font:
     text: Source Sans Pro
     code: Source Code Pro
+  custom_dir: docs/overrides
 
 plugins:
   - search:
